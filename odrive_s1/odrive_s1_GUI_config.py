@@ -1,0 +1,16 @@
+odrv = odrv0
+odrv.config.dc_bus_overvoltage_trip_level = 48
+odrv.config.dc_max_positive_current = 5
+odrv.config.brake_resistor0.enable = True
+odrv.config.brake_resistor0.resistance = 2
+odrv.axis0.config.motor.motor_type = MotorType.HIGH_CURRENT
+odrv.axis0.config.motor.torque_constant = 0.09188888888888888
+odrv.axis0.config.motor.pole_pairs = 20
+odrv.axis0.config.motor.current_soft_max = 10
+odrv.axis0.config.motor.current_hard_max = 18
+odrv.axis0.controller.config.input_mode = InputMode.PASSTHROUGH
+odrv.axis0.controller.config.control_mode = ControlMode.POSITION_CONTROL
+odrv.axis0.config.torque_soft_min = -0.1837777777777778
+odrv.axis0.config.torque_soft_max = 0.1837777777777778
+odrv.axis0.config.load_encoder = EncoderId.ONBOARD_ENCODER0
+odrv.axis0.config.commutation_encoder = EncoderId.ONBOARD_ENCODER0
